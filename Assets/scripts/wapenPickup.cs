@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class wapenPickup : MonoBehaviour
 {
-    public Cylinder1 gunScript;
+    public kogel gunScript;
     public Rigidbody rb;
     public BoxCollider coll;
     public Transform player, weaponHolder, Camera;
@@ -21,9 +21,9 @@ public class wapenPickup : MonoBehaviour
         slotFull = true;
 
         transform.SetParent(weaponHolder);
-        transform.localPosition = vector3.zero;
-        transform.localRotation = Quaternion.Euler(vector3.zero);
-        transform.localScale = vector3.one;
+        transform.localPosition = Vector3.zero;
+        transform.localRotation = Quaternion.Euler(Vector3.zero);
+        transform.localScale = Vector3.one;
 
         rb.isKinematic = true;
         coll.isTrigger = true;
@@ -41,7 +41,7 @@ public class wapenPickup : MonoBehaviour
         rb.isKinematic = false;
         coll.isTrigger = false;
 
-        rb.velocity = player.GetComponent<RigidBody>().velocity;
+        rb.velocity = player.GetComponent<Rigidbody>().velocity;
 
         rb.AddForce(Camera.forward * dropForwardForce, ForceMode.Impulse);
         rb.AddForce(Camera.up * dropUpwardForce, ForceMode.Impulse);

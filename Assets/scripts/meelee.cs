@@ -13,7 +13,7 @@ public class meelee : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -31,7 +31,7 @@ public class meelee : MonoBehaviour
     public void meeleeAanval()
     {
         kanMeelee = false;
-        kogel.SetActive = false;
+        schiet1.SetActive = "false";
         valtAan = true;
         StartCoroutine(resetCooldown());
     }

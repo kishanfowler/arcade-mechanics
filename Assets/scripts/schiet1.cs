@@ -16,6 +16,7 @@ public class schiet1 : MonoBehaviour
     public GameObject objectB;
     public GameObject objectC;
     public GameObject objectD;
+    public static string SetActive = "true";
     [SerializeField] private Vector3 _rotation;
 
 
@@ -29,11 +30,14 @@ public class schiet1 : MonoBehaviour
         objectC.transform.rotation = objectB.transform.rotation;
         objectB.transform.Rotate(_rotation = new Vector3(-90, 180, 270));
         objectC.transform.Rotate(_rotation = new Vector3(90, 180, 90));
-
-        if (Input.GetMouseButtonDown(0))
+        if (SetActive == "true")
         {
-            Instantiate(block, transform.position, transform.rotation);
+            if (Input.GetMouseButtonDown(0))
+            {
+                Instantiate(block, transform.position, transform.rotation);
+            }
         }
+
     }
 }
 

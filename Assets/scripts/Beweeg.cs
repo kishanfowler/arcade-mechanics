@@ -12,7 +12,9 @@ public class Beweeg : MonoBehaviour
 
     private Vector3 moveDiraction;
     public float gravityScale;
-    public int grounded = 2;
+    static public int grounded = 2;
+    static public int grounded1 = 2;
+    public int jumped = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,12 +39,23 @@ public class Beweeg : MonoBehaviour
         moveDiraction.y = yStore;
         if (Input.GetButtonDown("Jump") && grounded == 1 || (Input.GetButtonDown("Jump") && grounded == 2))
         {
+            jumped = 2;
             moveDiraction.y = jumpForce;
             grounded -= 1;
+            grounded1 -= 1;
+            print(Beweeg.grounded1);
         }
         if (controller.isGrounded)
         {
+            jumped = 1;
+            if (grounded == 1)
+            {
+                moveDiraction.y = 0;
+            }
+
             grounded = 1;
+            grounded1 = 2;
+            playAnimation.JumpedOrNot = 1;
         }
         moveDiraction.y = moveDiraction.y + (Physics.gravity.y * gravityScale * Time.deltaTime);
         controller.Move(moveDiraction * Time.deltaTime);

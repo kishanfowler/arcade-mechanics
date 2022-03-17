@@ -55,15 +55,15 @@ public class camtrol : MonoBehaviour
         }
 
         //limit up/down rotation
-        if (pivot.rotation.eulerAngles.x > maxViewAngle && pivot.rotation.eulerAngles.x < 180f + minViewAngle)
-        {
-            pivot.rotation = Quaternion.Euler(maxViewAngle, 0, 0);
-        }
+        //if (pivot.rotation.eulerAngles.x > maxViewAngle && pivot.rotation.eulerAngles.x < 180f + minViewAngle)
+        //{
+            //pivot.rotation = Quaternion.Euler(maxViewAngle, 0, 0);
+        //}
 
-        if (pivot.rotation.eulerAngles.x > 180f && pivot.rotation.eulerAngles.x < 315)
-        {
-            pivot.rotation = Quaternion.Euler(360f + minViewAngle, 0, 0);
-        }
+        //if (pivot.rotation.eulerAngles.x > 180f && pivot.rotation.eulerAngles.x < 315)
+        //{
+            //pivot.rotation = Quaternion.Euler(360f + minViewAngle, 0, 0);
+        //}
 
         //Move the camera based on the current rotation of the target & the original offset
         float desiredYAngle = target.eulerAngles.y;
@@ -75,7 +75,7 @@ public class camtrol : MonoBehaviour
 
         if (transform.position.y < target.position.y)
         {
-            transform.position = new Vector3(transform.position.x, target.position.y - .5f, transform.position.z);
+            transform.position = new Vector3(transform.position.x, target.position.y - 1.5f, transform.position.z);
         }
 
         transform.LookAt(target);

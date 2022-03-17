@@ -2,7 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+<<<<<<< HEAD
 public class heetseekingRocket : MonoBehaviour
+=======
+public class rocket : MonoBehaviour
+>>>>>>> cdfe9d19705fd336e1fce3bf2b5304bdd56eca76
 {
 
     [SerializeField] private Transform enemy;

@@ -8,7 +8,7 @@ public class kogel : MonoBehaviour
 
     [SerializeField] private Vector3 _rotation;
 
-
+    public int health = 100;
     public float thrust = 1.0f;
     public Rigidbody rb;
     public int xje = 0;
@@ -27,10 +27,15 @@ public class kogel : MonoBehaviour
     void Update()
     {
 
-        
-        
+
+
         rb = GetComponent<Rigidbody>();
         rb.AddRelativeForce(Vector3.forward * thrust);
+
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        Destroy(gameObject);
 
     }
 }

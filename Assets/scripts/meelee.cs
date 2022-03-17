@@ -31,7 +31,7 @@ public class meelee : MonoBehaviour
     public void meeleeAanval()
     {
         kanMeelee = false;
-        kogel.SetActive = false;
+        schiet1.SetActive = "false";
         valtAan = true;
         StartCoroutine(resetCooldown());
     }

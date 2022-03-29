@@ -13,7 +13,7 @@ public class schiet1 : MonoBehaviour
     public int width = 10;
     public int height = 4;
     public GameObject objectA;
-    public GameObject objectB;
+    public GameObject Gun;
     public GameObject objectC;
     public GameObject objectD;
     public static string SetActive = "true";
@@ -23,10 +23,10 @@ public class schiet1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        objectB.transform.rotation = objectD.transform.rotation;
-        objectC.transform.rotation = objectB.transform.rotation;
-        objectB.transform.Rotate(_rotation = new Vector3(-90, 180, 270));
-        objectC.transform.Rotate(_rotation = new Vector3(90, 180, 90));
+        Gun.transform.rotation = objectD.transform.rotation;
+        objectC.transform.rotation = Gun.transform.rotation;
+        Gun.transform.Rotate(_rotation = new Vector3(270.019775f, 180, 0));
+        objectC.transform.Rotate(_rotation = new Vector3(180, 180, 90));
         if (SetActive == "true")
         {
 

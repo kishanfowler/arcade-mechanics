@@ -21,10 +21,10 @@ public class wapenPickup : MonoBehaviour
         slotFull = true;
 
         transform.SetParent(weaponHolder);
-        transform.localPosition = Vector3.zero;
+        gameObject.transform.position = player.transform.position;
         transform.localRotation = Quaternion.Euler(Vector3.zero);
         transform.localScale = new Vector3(0.032689333f, 0.0345949084f, 0.0555723608f);
-
+        
         rb.isKinematic = true;
         coll.isTrigger = true;
 
@@ -71,12 +71,16 @@ public class wapenPickup : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (equipped)
+        {
+            transform.position = player.transform.position;
+        }
         Vector3 afstandNaarSpeler = player.position - transform.position;
         if (!equipped && afstandNaarSpeler.magnitude <= pickupRange && Input.GetKeyDown(KeyCode.E) && !slotFull)
         {
             pickup();
         }
-        
+
 
         if (equipped && Input.GetKeyDown(KeyCode.Q))
         {

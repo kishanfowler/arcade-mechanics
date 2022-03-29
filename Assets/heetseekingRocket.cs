@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class heetseekingRocket : MonoBehaviour
+public class rocket : MonoBehaviour
 
 {
 

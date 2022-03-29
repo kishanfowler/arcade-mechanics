@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class wapenPickup : MonoBehaviour
 {
-    public schiet1 gunScript;
+    public schie gunScript;
     public Rigidbody rb;
     public BoxCollider coll;
     public Transform player, weaponHolder, Camera;
@@ -21,10 +21,15 @@ public class wapenPickup : MonoBehaviour
         slotFull = true;
 
         transform.SetParent(weaponHolder);
+
         gameObject.transform.position = player.transform.position;
         transform.localRotation = Quaternion.Euler(Vector3.zero);
         transform.localScale = new Vector3(0.032689333f, 0.0345949084f, 0.0555723608f);
         
+
+        transform.localPosition = Vector3.zero;
+        transform.localRotation = Quaternion.Euler(Vector3.zero);
+        transform.localScale = new Vector3(0.032689333f, 0.0345949084f, 0.0555723608f);
         rb.isKinematic = true;
         coll.isTrigger = true;
 
@@ -71,10 +76,12 @@ public class wapenPickup : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (equipped)
         {
             transform.position = player.transform.position;
         }
+
         Vector3 afstandNaarSpeler = player.position - transform.position;
         if (!equipped && afstandNaarSpeler.magnitude <= pickupRange && Input.GetKeyDown(KeyCode.E) && !slotFull)
         {
@@ -89,3 +96,5 @@ public class wapenPickup : MonoBehaviour
     }
 
 }
+
+

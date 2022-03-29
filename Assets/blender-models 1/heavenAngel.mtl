@@ -1,0 +1,51 @@
+# Blender MTL File: 'heavenAngel.blend'
+# Material Count: 4
+
+newmtl AOS_Back
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.001239 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump assets\\models\\ace_of_spades_0d0d044b-a1cd-47d8-b88a-57da610aa2c8\\textures\\Ace Of Spades_back_Normal.png
+map_Ns assets\\models\\ace_of_spades_0d0d044b-a1cd-47d8-b88a-57da610aa2c8\\textures\\Ace Of Spades_back_Roughness.png
+refl assets\\models\\ace_of_spades_0d0d044b-a1cd-47d8-b88a-57da610aa2c8\\textures\\Ace Of Spades_back_Metalness.png
+
+newmtl AOS_Front
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.004263 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump assets\\models\\ace_of_spades_0d0d044b-a1cd-47d8-b88a-57da610aa2c8\\textures\\Ace Of Spades_Front_Normal.png
+map_Ns assets\\models\\ace_of_spades_0d0d044b-a1cd-47d8-b88a-57da610aa2c8\\textures\\Ace Of Spades_Front_Roughness.png
+refl assets\\models\\ace_of_spades_0d0d044b-a1cd-47d8-b88a-57da610aa2c8\\textures\\Ace Of Spades_Front_Metalness.png
+
+newmtl Material
+Ns 323.999994
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\info\\OneDrive\\Afbeeldingen\\Saved Pictures\\fur-554597_1280.jpg
+map_Ks .
+
+newmtl Material.001
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\info\\OneDrive\\Afbeeldingen\\Saved Pictures\\fur-554597_1280.jpg

@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+<<<<<<< HEAD:Assets/scripts 1/Beweeg.cs.meta
 guid: d51ab087d731fa7499ef80247d7ce1f3
+=======
+guid: 660bc9f35b9f1884db67124dbf2e7f6b
+>>>>>>> c54e1b3a561e9dcadfb5b334a866f212e82414f4:Assets/Beweeg.cs.meta
+=======
+guid: d51ab087d731fa7499ef80247d7ce1f3
+>>>>>>> c54e1b3a561e9dcadfb5b334a866f212e82414f4
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

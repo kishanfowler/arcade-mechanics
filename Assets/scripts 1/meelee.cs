@@ -31,7 +31,7 @@ public class meelee : MonoBehaviour
     public void meeleeAanval()
     {
         kanMeelee = false;
-        schiet1.SetActive = "false";
+        schie.SetActive = "false";
         valtAan = true;
         StartCoroutine(resetCooldown());
     }

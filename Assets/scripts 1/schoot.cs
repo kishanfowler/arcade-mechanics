@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class schie : MonoBehaviour
+public class schoot : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -13,7 +13,7 @@ public class schie : MonoBehaviour
     public int width = 10;
     public int height = 4;
     public GameObject objectA;
-    //public GameObject objectB;
+    public GameObject objectB;
     public GameObject objectC;
     public GameObject objectD;
     public static string SetActive = "true";
@@ -23,12 +23,10 @@ public class schie : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(SetActive);
-        Debug.Log(schietcount.geschoten);
-        //objectB.transform.rotation = objectD.transform.rotation;
-        objectC.transform.rotation = objectD.transform.rotation;
-        // objectB.transform.Rotate(_rotation = new Vector3(-90, 180, 270));
-        objectC.transform.Rotate(_rotation = new Vector3(0, 180, 90));
+        objectB.transform.rotation = objectD.transform.rotation;
+        objectC.transform.rotation = objectB.transform.rotation;
+        objectB.transform.Rotate(_rotation = new Vector3(-90, 180, 270));
+        objectC.transform.Rotate(_rotation = new Vector3(90, 180, 90));
         if (SetActive == "true")
         {
 

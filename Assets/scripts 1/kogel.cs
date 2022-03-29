@@ -20,7 +20,7 @@ public class kogel : MonoBehaviour
 
 
         transform.position += transform.forward;
-        gameObject.transform.Rotate(_rotation = new Vector3(xje, 270, zje));
+        gameObject.transform.Rotate(_rotation = new Vector3(180, 0, 0));
     }
 
     // Update is called once per frame

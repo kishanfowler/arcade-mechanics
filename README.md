@@ -1,10 +1,7 @@
 # arcade-mechanics
-<<<<<<< HEAD
-=======
 
-hier is alles van onze bo opdracht die we moeten , maken voor school.
-dus alle scripts en models en unity projects.
+Dit is de github van onze beroeps opdracht arcade mechanics. Hier zullen wij onze scripts, models, animaties en alles wat te maken heeft met het process van games maken neer.
 
->>>>>>> cdfe9d19705fd336e1fce3bf2b5304bdd56eca76
-hier zetten wij de verschillende arcade mechanics
-[Trello](https://trello.com/b/xzztdBU0/kishanenrut)
+Deze beroeps opdracht gaan we verschillende stukken van een game in elkaar zetten en helemaal shippable maken. Dit houdt in dat we alles van dat specifieke onderdeel perfect maken.
+
+Hier onze [Trello](https://trello.com/b/xzztdBU0/kishanenrut).
